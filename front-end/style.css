@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    background-color: #1c3049;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    margin-top: 12px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+/* Card */
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 780px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin: 0 auto 20px auto;
+}
+
+/* Buttons */
+.btn {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2a7aaf;
+}
+
+.toggle-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+/* Form sections */
+.form-section h2 {
+    color: #1c3049;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-section input:focus {
+    border-color: #3498db;
+}
+
+/* Search */
+.search-row {
+    display: flex;
+    gap: 10px;
+}
+
+.search-row input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-row input:focus {
+    border-color: #3498db;
+}
+
+/* Courses table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+thead th {
+    background-color: #f2f2f2;
+    color: #1c3049;
+    font-weight: bold;
+}
+
+/* Enroll button in courses table */
+table button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+table button:hover {
+    background-color: #2a7aaf;
+}
