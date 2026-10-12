@@ -19,7 +19,10 @@ class StudentServiceTest {
 
     @Test
     void register_should_create_student_and_return_saved_student() {
-        studentresquestDTO dto = new studentresquestDTO("Alice", "alice@example.com", "secret");
+        studentresquestDTO dto = new studentresquestDTO();
+        dto.setName("Alice");
+        dto.setEmail("alice@example.com");
+        dto.setPassword("secret");
 
         Student saved = studentservice.register(dto);
 
