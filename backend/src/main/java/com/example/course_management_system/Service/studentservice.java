@@ -26,6 +26,10 @@ public class studentservice {
             throw new IllegalArgumentException("Registration data cannot be null");
         }
 
+        if (studentRepo.existsByEmail(registrationdto.getEmail())) {
+            throw new RuntimeException("Email is already registered");
+        }
+
         Student student = new Student();
         student.setName(registrationdto.getName());
         student.setEmail(registrationdto.getEmail());
